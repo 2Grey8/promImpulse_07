@@ -1,0 +1,207 @@
+.service{
+  width: 192rem;
+
+  &__inner{
+    display: block;
+    width: 192rem;
+    margin: 0 auto;
+    margin-bottom: 12rem;
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__group{
+    display: block;
+    width: 138rem;
+    margin: 0 auto;
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+  }
+
+  &__container{
+    display: block;
+    width: 138rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__box{
+    display: block;
+    width: 69rem;
+    background: #118BDD;
+  }
+
+  &__title{
+    display: block;
+    width: 59rem;
+    padding-top: 4.3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+
+    text-align: left;
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 150%;
+    color: #FFFFFF;
+
+    &_2{
+      display: block;
+      width: 141px;
+      margin-bottom: -4rem;
+
+      font-family: "TT Norms";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 180%;
+      color: #000000;
+    }
+  }
+
+  &__subtitle{
+    display: block;
+    width: 146px;
+    margin-top: 12rem;
+    margin-left: 15rem;
+    margin-bottom: -5rem;
+
+    text-align: left;
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 94px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    span{
+      display: block;
+      width: 40rem;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 150%;
+      text-transform: none;
+    }
+  }
+
+  &__text{
+    display: block;
+    width: 69rem;
+    padding: 5rem;
+    text-align: left;
+
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 180%;
+    color: #000000;
+  }
+
+  &__link{
+    display: block;
+    width: 27rem;
+    margin-left: 5rem;
+    margin-bottom: 4.3rem;
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+    padding-left: 3rem;
+
+    text-align: left;
+    text-decoration: none;
+    font-family: "TT Norms";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    position: relative;
+
+    &::before{
+      content: "";
+      display: block;
+      width: 86px;
+      height: 86px;
+      border: 3px solid #FFFFFF;
+      border-left: none;
+      position: absolute;
+      top: -3px;
+      left: 265px;
+    }
+
+    &::after{
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url(../img/arrowDown.png);
+      position: absolute;
+      top: 26px;
+      left: 290px;
+    }
+  }
+
+  &__paragraph{
+    display: block;
+    margin-bottom: 4rem;
+  }
+}

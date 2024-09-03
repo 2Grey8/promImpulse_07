@@ -1,0 +1,118 @@
+.header{
+  width: 192rem;
+
+  &__wrap{
+    display: block;
+    width: 192rem;
+    height: 50rem;
+    margin: 0 auto;
+    margin-bottom: 8rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/bgheader.png);
+
+    @include respond(phone){
+      display: block;
+      width: 60rem;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__group{
+    width: 138rem;
+    margin: 0 auto;
+    padding-top: 4.6rem;
+    margin-bottom: 26rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(phone){
+      width: 60rem;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__logo{
+    display: block;
+    width: 8.5rem;
+    height: 2.68rem;
+  }
+
+  &__navigation{
+    width: 96rem;
+    display: block;
+
+    @include respond(phone){
+      display: none;
+      width: 60rem;
+      margin: 0 auto;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__contact{
+    display: block;
+    width: 13.8rem;
+    text-align: left;
+
+    @include respond(phone){
+      display: flex;
+      justify-content: space-around;
+      width: 60rem;
+    }
+
+    @include respond(port){
+      width: 90rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include respond(land){
+      width: 120rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
